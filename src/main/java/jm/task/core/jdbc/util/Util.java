@@ -7,11 +7,13 @@ public class Util {
     private static final String url = "jdbc:postgresql://localhost:5432/postgres";
     private static final String log = "postgres";
     private static final String pass = "123456789";
+
+
     public static Connection getConnectionDataBase() {
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(url, log, pass);
-            if (connection != null) {
+           if (connection != null) {
                 System.out.println("База данных подключена!");
             }
         } catch (SQLException e) {
@@ -19,7 +21,11 @@ public class Util {
         }
 
         return connection;
-    }
+   }
+
+
+
+
 }
 
     // реализуйте настройку соеденения с БД

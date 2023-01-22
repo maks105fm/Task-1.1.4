@@ -20,11 +20,6 @@ public class Main {
         userService.dropUsersTable();
       /*
 
-
-
-
-
-
   */
         // реализуйте алгоритм здесь
     }
